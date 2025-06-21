@@ -1,0 +1,5 @@
+D:\learning_material\sem5\prn212\Assignment1\Assignment1\ViewModel\obj\Debug\net8.0-windows\ViewModel.csproj.AssemblyReference.cache
+D:\learning_material\sem5\prn212\Assignment1\Assignment1\ViewModel\obj\Debug\net8.0-windows\ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\learning_material\sem5\prn212\Assignment1\Assignment1\ViewModel\obj\Debug\net8.0-windows\ViewModel.AssemblyInfoInputs.cache
+D:\learning_material\sem5\prn212\Assignment1\Assignment1\ViewModel\obj\Debug\net8.0-windows\ViewModel.AssemblyInfo.cs
+D:\learning_material\sem5\prn212\Assignment1\Assignment1\ViewModel\obj\Debug\net8.0-windows\ViewModel.csproj.CoreCompileInputs.cache

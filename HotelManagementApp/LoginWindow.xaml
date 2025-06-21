@@ -1,0 +1,17 @@
+﻿<Window x:Class="HotelManagementApp.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelManagementApp"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"><Run FontWeight="Bold" Text="LOGIN VIA CREDENTIALS"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Margin="371,138,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="303,134,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.411,-1.584"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="303,165,0,0" VerticalAlignment="Top"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="371,169,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Log in" HorizontalAlignment="Left" Margin="371,217,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,267 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{68E3F1DB-157B-4BC7-BC95-A55D285BCDA0}|ViewModel\\ViewModel.csproj|d:\\learning_material\\sem5\\prn212\\assignment1\\assignment1\\viewmodel\\customermanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68E3F1DB-157B-4BC7-BC95-A55D285BCDA0}|ViewModel\\ViewModel.csproj|solutionrelative:viewmodel\\customermanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E3F1DB-157B-4BC7-BC95-A55D285BCDA0}|ViewModel\\ViewModel.csproj|d:\\learning_material\\sem5\\prn212\\assignment1\\assignment1\\viewmodel\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68E3F1DB-157B-4BC7-BC95-A55D285BCDA0}|ViewModel\\ViewModel.csproj|solutionrelative:viewmodel\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{827F018D-CBB8-4151-9D5B-394CF1819376}|View\\View.csproj|d:\\learning_material\\sem5\\prn212\\assignment1\\assignment1\\view\\editcustomerinfo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{827F018D-CBB8-4151-9D5B-394CF1819376}|View\\View.csproj|solutionrelative:view\\editcustomerinfo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E3F1DB-157B-4BC7-BC95-A55D285BCDA0}|ViewModel\\ViewModel.csproj|d:\\learning_material\\sem5\\prn212\\assignment1\\assignment1\\viewmodel\\customerinfoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68E3F1DB-157B-4BC7-BC95-A55D285BCDA0}|ViewModel\\ViewModel.csproj|solutionrelative:viewmodel\\customerinfoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E3F1DB-157B-4BC7-BC95-A55D285BCDA0}|ViewModel\\ViewModel.csproj|d:\\learning_material\\sem5\\prn212\\assignment1\\assignment1\\viewmodel\\viewmodel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{68E3F1DB-157B-4BC7-BC95-A55D285BCDA0}|ViewModel\\ViewModel.csproj|solutionrelative:viewmodel\\viewmodel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68E3F1DB-157B-4BC7-BC95-A55D285BCDA0}|ViewModel\\ViewModel.csproj|d:\\learning_material\\sem5\\prn212\\assignment1\\assignment1\\viewmodel\\viewmodel.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{68E3F1DB-157B-4BC7-BC95-A55D285BCDA0}|ViewModel\\ViewModel.csproj|solutionrelative:viewmodel\\viewmodel.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{827F018D-CBB8-4151-9D5B-394CF1819376}|View\\View.csproj|d:\\learning_material\\sem5\\prn212\\assignment1\\assignment1\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{827F018D-CBB8-4151-9D5B-394CF1819376}|View\\View.csproj|solutionrelative:view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{827F018D-CBB8-4151-9D5B-394CF1819376}|View\\View.csproj|d:\\learning_material\\sem5\\prn212\\assignment1\\assignment1\\view\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{827F018D-CBB8-4151-9D5B-394CF1819376}|View\\View.csproj|solutionrelative:view\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{827F018D-CBB8-4151-9D5B-394CF1819376}|View\\View.csproj|d:\\learning_material\\sem5\\prn212\\assignment1\\assignment1\\view\\view.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{827F018D-CBB8-4151-9D5B-394CF1819376}|View\\View.csproj|solutionrelative:view\\view.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{827F018D-CBB8-4151-9D5B-394CF1819376}|View\\View.csproj|d:\\learning_material\\sem5\\prn212\\assignment1\\assignment1\\view\\editcustomerinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{827F018D-CBB8-4151-9D5B-394CF1819376}|View\\View.csproj|solutionrelative:view\\editcustomerinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A06BA9C-91B4-4D03-99A5-D1971FA01BF0}|Models\\Models.csproj|d:\\learning_material\\sem5\\prn212\\assignment1\\assignment1\\models\\roominformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A06BA9C-91B4-4D03-99A5-D1971FA01BF0}|Models\\Models.csproj|solutionrelative:models\\roominformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A06BA9C-91B4-4D03-99A5-D1971FA01BF0}|Models\\Models.csproj|d:\\learning_material\\sem5\\prn212\\assignment1\\assignment1\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A06BA9C-91B4-4D03-99A5-D1971FA01BF0}|Models\\Models.csproj|solutionrelative:models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 351,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ViewModel",
+              "DocumentMoniker": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\ViewModel\\ViewModel.csproj",
+              "RelativeDocumentMoniker": "ViewModel\\ViewModel.csproj",
+              "ToolTip": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\ViewModel\\ViewModel.csproj",
+              "RelativeToolTip": "ViewModel\\ViewModel.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-21T07:40:23.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditCustomerInfo.xaml.cs",
+              "DocumentMoniker": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\View\\EditCustomerInfo.xaml.cs",
+              "RelativeDocumentMoniker": "View\\EditCustomerInfo.xaml.cs",
+              "ToolTip": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\View\\EditCustomerInfo.xaml.cs",
+              "RelativeToolTip": "View\\EditCustomerInfo.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T07:29:40.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ViewModel.csproj",
+              "DocumentMoniker": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\ViewModel\\ViewModel.csproj",
+              "RelativeDocumentMoniker": "ViewModel\\ViewModel.csproj",
+              "ToolTip": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\ViewModel\\ViewModel.csproj",
+              "RelativeToolTip": "ViewModel\\ViewModel.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-21T07:16:10.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomerInfoViewmodel.cs",
+              "DocumentMoniker": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\ViewModel\\CustomerInfoViewmodel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\CustomerInfoViewmodel.cs",
+              "ToolTip": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\ViewModel\\CustomerInfoViewmodel.cs",
+              "RelativeToolTip": "ViewModel\\CustomerInfoViewmodel.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwBAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T06:02:30.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomerManagementViewmodel.cs",
+              "DocumentMoniker": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\ViewModel\\CustomerManagementViewmodel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\CustomerManagementViewmodel.cs",
+              "ToolTip": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\ViewModel\\CustomerManagementViewmodel.cs",
+              "RelativeToolTip": "ViewModel\\CustomerManagementViewmodel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T06:37:27.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\ViewModel\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "ViewModel\\RelayCommand.cs",
+              "ToolTip": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\ViewModel\\RelayCommand.cs",
+              "RelativeToolTip": "ViewModel\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T06:09:48.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\View\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "View\\MainWindow.xaml",
+              "ToolTip": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\View\\MainWindow.xaml",
+              "RelativeToolTip": "View\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-21T07:38:18.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\View\\App.xaml",
+              "RelativeDocumentMoniker": "View\\App.xaml",
+              "ToolTip": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\View\\App.xaml",
+              "RelativeToolTip": "View\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-21T07:37:53.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "View",
+              "DocumentMoniker": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\View\\View.csproj",
+              "RelativeDocumentMoniker": "View\\View.csproj",
+              "ToolTip": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\View\\View.csproj",
+              "RelativeToolTip": "View\\View.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-21T07:37:35.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EditCustomerInfo.xaml",
+              "DocumentMoniker": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\View\\EditCustomerInfo.xaml",
+              "RelativeDocumentMoniker": "View\\EditCustomerInfo.xaml",
+              "ToolTip": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\View\\EditCustomerInfo.xaml",
+              "RelativeToolTip": "View\\EditCustomerInfo.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-21T07:29:37.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Models\\Customer.cs",
+              "ToolTip": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\Models\\Customer.cs",
+              "RelativeToolTip": "Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T06:57:00.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RoomInformation.cs",
+              "DocumentMoniker": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\Models\\RoomInformation.cs",
+              "RelativeDocumentMoniker": "Models\\RoomInformation.cs",
+              "ToolTip": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\Models\\RoomInformation.cs",
+              "RelativeToolTip": "Models\\RoomInformation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T06:56:39.188Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 116,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAFoHAAAAAAAAAAAuwGEHAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-06-21T07:36:03.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
