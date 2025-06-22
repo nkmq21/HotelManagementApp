@@ -1,8 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "SwGJGVkr1uM=",
+  "dgSpecHash": "7HIAT2lVNck=",
   "success": true,
   "projectFilePath": "D:\\learning_material\\sem5\\prn212\\Assignment1\\Assignment1\\DataAccessLayer\\DataAccessLayer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\nkmq21\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.0-preview.5.25277.114\\microsoft.extensions.configuration.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "C:\\Users\\nkmq21\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.0-preview.5.25277.114\\microsoft.extensions.configuration.abstractions.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "C:\\Users\\nkmq21\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\10.0.0-preview.5.25277.114\\microsoft.extensions.configuration.fileextensions.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "C:\\Users\\nkmq21\\.nuget\\packages\\microsoft.extensions.configuration.json\\10.0.0-preview.5.25277.114\\microsoft.extensions.configuration.json.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "C:\\Users\\nkmq21\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\10.0.0-preview.5.25277.114\\microsoft.extensions.fileproviders.abstractions.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "C:\\Users\\nkmq21\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\10.0.0-preview.5.25277.114\\microsoft.extensions.fileproviders.physical.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "C:\\Users\\nkmq21\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\10.0.0-preview.5.25277.114\\microsoft.extensions.filesystemglobbing.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "C:\\Users\\nkmq21\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.0-preview.5.25277.114\\microsoft.extensions.primitives.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "C:\\Users\\nkmq21\\.nuget\\packages\\system.io.pipelines\\10.0.0-preview.5.25277.114\\system.io.pipelines.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "C:\\Users\\nkmq21\\.nuget\\packages\\system.text.encodings.web\\10.0.0-preview.5.25277.114\\system.text.encodings.web.10.0.0-preview.5.25277.114.nupkg.sha512",
+    "C:\\Users\\nkmq21\\.nuget\\packages\\system.text.json\\10.0.0-preview.5.25277.114\\system.text.json.10.0.0-preview.5.25277.114.nupkg.sha512"
+  ],
   "logs": []
 }

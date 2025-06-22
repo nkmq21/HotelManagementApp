@@ -12,14 +12,14 @@ namespace Services
     {
         private readonly IRepository<Booking> _bookingRepository = bookingRepository;
 
-        public void AddBooking(Booking booking)
+        public bool AddBooking(Booking booking)
         {
             ValidateBooking(booking);
             if (!IsRoomAvailable(booking.RoomId, booking.CheckinTime, booking.CheckoutTime))
             {
                 throw new InvalidOperationException("Room is not available");
             }
-            _bookingRepository.Add(booking);
+            return _bookingRepository.Add(booking);
         }
 
         public void ValidateBooking(Booking booking)
@@ -40,7 +40,7 @@ namespace Services
 
         private bool IsRoomAvailable(int roomId, DateTime checkinTime, DateTime checkoutTime)
         {
-            var existingBooking = _bookingRepository.GetAll().Where(b => b.RoomId == roomId && b.BookingStatus).ToList();
+            var existingBooking = _bookingRepository.GetAll().Where(b => b.RoomId == roomId && b.BookingStatus == BookingStatus.Confirmed).ToList();
             foreach (var booking in existingBooking)
             {
                 if (checkinTime < booking.CheckoutTime && checkoutTime > booking.CheckinTime)

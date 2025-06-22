@@ -13,3 +13,4 @@ D:\learning_material\sem5\prn212\Assignment1\Assignment1\DataAccessLayer\obj\Deb
 D:\learning_material\sem5\prn212\Assignment1\Assignment1\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
 D:\learning_material\sem5\prn212\Assignment1\Assignment1\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
 D:\learning_material\sem5\prn212\Assignment1\Assignment1\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
+D:\learning_material\sem5\prn212\Assignment1\Assignment1\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.sourcelink.json

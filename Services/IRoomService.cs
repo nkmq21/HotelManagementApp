@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using DataAccessLayer;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,10 +11,11 @@ namespace Services
     public interface IRoomService
     {
         IEnumerable<RoomInformation> GetRoomInformation();
-        void AddRoom(RoomInformation roomInformation);
+        bool AddRoom(RoomInformation roomInformation);
         void RemoveRoom(RoomInformation roomInformation);
         bool UpdateRoom(RoomInformation roomInformation);
         RoomInformation GetRoomById(int roomId);
+        List<RoomInformation> GetAvailableRooms(DateTime checkinDate, DateTime checkoutDate, RoomType selectedRoomType, int numberOfGuests);
 
     }
 }

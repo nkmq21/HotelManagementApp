@@ -30,12 +30,14 @@ namespace DataAccessLayer
             return listCustomer;
         }
 
-        public static void AddCustomer(Customer customer)
+        public static bool AddCustomer(Customer customer)
         {
             if (!listCustomer.Any(c => customer.CustomerId == c.CustomerId))
             {
                 listCustomer.Add(customer);
+                return true;
             }
+            return false;
         }
 
         public static void DeleteCustomer(Customer customer)

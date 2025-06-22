@@ -10,7 +10,7 @@ namespace Services
     public interface IBookingService
     {
         IEnumerable<Booking> GetAllBooking();
-        void AddBooking(Booking booking);
+        bool AddBooking(Booking booking);
         void RemoveBooking(Booking booking);
         bool UpdateBooking(Booking booking);
         Booking GetBookingById(int id);

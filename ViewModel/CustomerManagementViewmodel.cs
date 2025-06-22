@@ -4,12 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using View;
-
 
 namespace ViewModel
 {
@@ -18,6 +15,7 @@ namespace ViewModel
         public ObservableCollection<Customer> Customers { get; set; }
 
         private readonly ICustomerService _customerService;
+        private readonly IDialogService _dialogService;
 
         private Customer _selectedCustomer;
         public Customer SelectedCustomer
@@ -29,12 +27,13 @@ namespace ViewModel
             }
         }
 
-        public CustomerManagementViewmodel(ICustomerService customerService)
+        public CustomerManagementViewmodel(ICustomerService customerService, IDialogService dialogService)
         {
             _customerService = customerService;
+            _dialogService = dialogService;
             LoadCustomer();
             ShowEditWindowCommand = new RelayCommand(ShowEditWindow, CanShowEditWindow);
-
+            DeleteCustomerCommand = new RelayCommand(ShowDeleteWindow, CanShowDelWindow);
         }
 
         private void LoadCustomer()
@@ -60,11 +59,7 @@ namespace ViewModel
 
             if (customerToEdit != null)
             {
-                CustomerInfoViewmodel cusInfo = new CustomerInfoViewmodel(_customerService, customerToEdit);
-                EditCustomerInfo edit = new EditCustomerInfo();
-                edit.DataContext = cusInfo;
-
-                var result = edit.ShowDialog();
+                var result = _dialogService.ShowEditCustomerDialog(customerToEdit, _customerService);
                 if (result == true)
                 {
                     LoadCustomer();
@@ -91,6 +86,5 @@ namespace ViewModel
         {
             return parameter is Customer;
         }
-
     }
 }

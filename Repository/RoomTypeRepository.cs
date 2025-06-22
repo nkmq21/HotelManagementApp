@@ -10,9 +10,9 @@ namespace Repository
 {
     public class RoomTypeRepository : IRepository<RoomType>
     {
-        public void Add(RoomType entity)
+        public bool Add(RoomType entity)
         {
-            RoomTypeDAO.AddRoomType(entity);
+            return RoomTypeDAO.AddRoomType(entity);
         }
 
         public void Delete(RoomType entity)
@@ -25,6 +25,11 @@ namespace Repository
             return RoomTypeDAO.GetAllRoomTypes();
         }
 
+        public List<RoomInformation> GetAvailableRooms(DateTime checkinDate, DateTime checkoutDate, RoomType selectedRoomType, int numberOfGuests)
+        {
+            throw new NotImplementedException();
+        }
+
         public RoomType GetById(int id)
         {
             return RoomTypeDAO.GetRoomTypeById(id);
@@ -33,6 +38,11 @@ namespace Repository
         public bool Update(RoomType entity)
         {
             return RoomTypeDAO.UpdateRoomType(entity);
+        }
+
+        bool IRepository<RoomType>.Add(RoomType entity)
+        {
+            throw new NotImplementedException();
         }
     }
 }

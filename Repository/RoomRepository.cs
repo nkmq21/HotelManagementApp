@@ -10,9 +10,9 @@ namespace Repository
 {
     public class RoomRepository : IRepository<RoomInformation>
     {
-        public void Add(RoomInformation entity)
+        public bool Add(RoomInformation entity)
         {
-            RoomDAO.AddRoom(entity);
+            return RoomDAO.AddRoom(entity);
         }
 
         public void Delete(RoomInformation entity)
@@ -30,9 +30,20 @@ namespace Repository
             throw new NotImplementedException();
         }
 
+        public List<RoomInformation> GetAvailableRooms(DateTime checkinDate, DateTime checkoutDate, RoomType selectedRoomType, int numberOfGuests)
+        {
+            return RoomDAO.GetAvailableRooms(checkinDate, checkoutDate, selectedRoomType, numberOfGuests);
+        }
+
+
         public bool Update(RoomInformation entity)
         {
             return RoomDAO.UpdateRoomInformation(entity);
+        }
+
+        bool IRepository<RoomInformation>.Add(RoomInformation entity)
+        {
+            throw new NotImplementedException();
         }
     }
 }

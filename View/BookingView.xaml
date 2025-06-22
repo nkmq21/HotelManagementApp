@@ -1,0 +1,175 @@
+﻿<UserControl x:Class="View.BookingView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:View"
+             xmlns:System="clr-namespace:System;assembly=mscorlib"
+             xmlns:viewModel="clr-namespace:ViewModel;assembly=ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <BooleanToVisibilityConverter x:Key="BoolToVisConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <TextBlock Grid.Row="0" Text="Book a Room" 
+                   FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+
+        <!-- Search Criteria Section -->
+        <Grid Grid.Row="1" Margin="0,0,0,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Check-in Date -->
+            <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                <TextBlock Text="Check-in Date" Margin="0,0,0,5"/>
+                <DatePicker x:Name="checkInDatePicker" SelectedDate="{Binding CheckInDate}" 
+                            DisplayDateStart="{x:Static System:DateTime.Today}"/>
+            </StackPanel>
+
+            <!-- Check-out Date -->
+            <StackPanel Grid.Column="1" Margin="10,0,10,0">
+                <TextBlock Text="Check-out Date" Margin="0,0,0,5"/>
+                <DatePicker x:Name="checkOutDatePicker" SelectedDate="{Binding CheckOutDate}"
+                            DisplayDateStart="{Binding CheckInDate}"/>
+            </StackPanel>
+
+            <!-- Room Type -->
+            <StackPanel Grid.Column="2" Margin="10,0,10,0">
+                <TextBlock Text="Room Type" Margin="0,0,0,5"/>
+                <ComboBox ItemsSource="{Binding RoomTypes}"
+                          SelectedItem="{Binding SelectedRoomType}"
+                          DisplayMemberPath="TypeName"/>
+            </StackPanel>
+
+            <!-- Number of Guests -->
+            <StackPanel Grid.Column="3" Margin="10,0,0,0">
+                <TextBlock Text="Guests" Margin="0,0,0,5"/>
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="-" Width="30" Height="24" Click="DecrementGuests_Click"/>
+                    <TextBox Text="{Binding NumberOfGuests}" Width="40" Height="24"
+                             TextAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Button Content="+" Width="30" Height="24" Click="IncrementGuests_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+        <!-- Search Button -->
+        <Button Grid.Row="1" Content="Search Availability" 
+                HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                Command="{Binding SearchRoomAvailabilityCommand}"
+                Padding="15,5" Margin="0,10,0,0"/>
+
+        <!-- Results Section -->
+        <Grid Grid.Row="2" Margin="0,20,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Available Rooms List -->
+            <TextBlock Grid.Row="0" Text="Available Rooms" 
+                       FontSize="18" FontWeight="SemiBold" Margin="0,0,0,10"/>
+
+            <DataGrid x:Name="roomsDataGrid" Grid.Row="1" 
+                      ItemsSource="{Binding AvailableRooms}"
+                      SelectedItem="{Binding SelectedRoom}"
+                      AutoGenerateColumns="False" IsReadOnly="True"
+                      SelectionMode="Single" BorderThickness="1"
+                      GridLinesVisibility="Horizontal"
+                      MouseDoubleClick="RoomsDataGrid_MouseDoubleClick">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Room Number" Binding="{Binding RoomId}" Width="Auto"/>
+                    <DataGridTextColumn Header="Room Name" Binding="{Binding RoomName}" Width="*"/>
+                    <DataGridTextColumn Header="Description" Binding="{Binding RoomDescription}" Width="*"/>
+                    <DataGridTextColumn Header="Max Capacity" Binding="{Binding MaxCapacity}" Width="Auto"/>
+                    <DataGridTextColumn Header="Price per Night" Binding="{Binding RoomPricePerDate, StringFormat=C}" Width="Auto"/>
+                    <DataGridTextColumn Header="Room Type" Binding="{Binding RoomType.TypeName}" Width="*"/>
+                </DataGrid.Columns>
+                <DataGrid.RowStyle>
+                    <Style TargetType="DataGridRow">
+                        <Setter Property="Height" Value="40"/>
+                    </Style>
+                </DataGrid.RowStyle>
+            </DataGrid>
+
+            <!-- Price and Booking Summary -->
+            <Grid Grid.Row="2" Margin="0,15,0,0" x:Name="bookingSummary">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Booking Summary -->
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="Booking Summary" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                    <TextBlock>
+                        <Run Text="Check-in: "/>
+                        <Run Text="{Binding CheckInDate, StringFormat=d}"/>
+                        <Run Text=" | Check-out: "/>
+                        <Run Text="{Binding CheckOutDate, StringFormat=d}"/>
+                        <Run Text=" | Nights: "/>
+                        <Run Text="{Binding StayDuration}"/>
+                    </TextBlock>
+                </StackPanel>
+
+                <!-- Total Price -->
+                <StackPanel Grid.Column="1" HorizontalAlignment="Right">
+                    <TextBlock Text="Total Price" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                    <TextBlock Text="{Binding TotalPrice, StringFormat=C}" 
+                               FontSize="18" FontWeight="Bold"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+        <!-- Action Buttons and Status -->
+        <Grid Grid.Row="3" Margin="0,20,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Status Message -->
+            <TextBlock Grid.Column="0" Text="{Binding StatusMessage}" 
+                       VerticalAlignment="Center" Foreground="#444444"/>
+
+            <!-- Cancel Button -->
+            <Button Grid.Column="1" Content="Cancel" 
+                    Command="{Binding CancelCommand}"
+                    Padding="15,5" Margin="0,0,15,0"/>
+
+            <!-- Book Now Button -->
+            <Button Grid.Column="2" Content="Book Now" 
+                    Command="{Binding BookRoomCommand}"
+                    Background="#007ACC" Foreground="White"
+                    Padding="15,5"/>
+        </Grid>
+
+        <!-- Loading Overlay -->
+        <Grid Grid.RowSpan="4" Background="#80000000" 
+              Visibility="{Binding IsSearching, Converter={StaticResource BoolToVisConverter}}">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Processing..." Foreground="White" FontSize="18" Margin="0,0,0,10"/>
+                <ProgressBar IsIndeterminate="True" Width="200" Height="10"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

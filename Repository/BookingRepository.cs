@@ -10,9 +10,9 @@ namespace Repository
 {
     public class BookingRepository : IRepository<Booking>
     {
-        public void Add(Booking entity)
+        public bool Add(Booking entity)
         {
-            BookingDAO.AddBooking(entity);
+            return BookingDAO.AddBooking(entity);
         }
 
         public void Delete(Booking entity)
@@ -23,6 +23,11 @@ namespace Repository
         public IEnumerable<Booking> GetAll()
         {
             return BookingDAO.GetAllBooking();
+        }
+
+        public List<RoomInformation> GetAvailableRooms(DateTime checkinDate, DateTime checkoutDate, RoomType selectedRoomType, int numberOfGuests)
+        {
+            throw new NotImplementedException();
         }
 
         public Booking GetById(int id)

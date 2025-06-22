@@ -16,9 +16,14 @@ namespace Services
         {
             _roomInformationRepository = roomInformationRepository;
         }
-        public void AddRoom(RoomInformation roomInformation)
+        public bool AddRoom(RoomInformation roomInformation)
         {
-            _roomInformationRepository.Add(roomInformation);
+            return _roomInformationRepository.Add(roomInformation);
+        }
+
+        public List<RoomInformation> GetAvailableRooms(DateTime checkinDate, DateTime checkoutDate, RoomType selectedRoomType, int numberOfGuests)
+        {
+            return _roomInformationRepository.GetAvailableRooms(checkinDate, checkoutDate, selectedRoomType, numberOfGuests);
         }
 
         public RoomInformation GetRoomById(int roomId)

@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace Models
 {
+    public enum BookingStatus
+    {
+        Confirmed = 1,
+        Pending = 2,
+        Canceled = 3
+    }
+
     public class Booking
     {
         public int BookingId { get; set; }
@@ -15,10 +22,10 @@ namespace Models
         public DateTime CheckoutTime { get; set; }
         public decimal totalPrice { get; set; }
         public DateTime BookingDate { get; set; }
-        public bool BookingStatus { get; set; }
+        public BookingStatus BookingStatus { get; set; } = BookingStatus.Confirmed;
         public Booking() { }
 
-        public Booking(int bookingId, int customerId, int roomId, DateTime checkinTime, DateTime checkoutTime, decimal totalPrice, DateTime bookingDate, bool bookingStatus)
+        public Booking(int bookingId, int customerId, int roomId, DateTime checkinTime, DateTime checkoutTime, decimal totalPrice, DateTime bookingDate, BookingStatus bookingStatus)
         {
             BookingId = bookingId;
             CustomerId = customerId;

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DataAccessLayer;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +12,9 @@ namespace Repository
     {
         IEnumerable<T> GetAll();
         T GetById(int id);
-        void Add(T entity);
+        bool Add(T entity);
         bool Update(T entity);
         void Delete(T entity);
+        List<RoomInformation> GetAvailableRooms(DateTime checkinDate, DateTime checkoutDate, RoomType selectedRoomType, int numberOfGuests);
     }
 }

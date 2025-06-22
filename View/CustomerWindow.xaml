@@ -1,0 +1,47 @@
+﻿<Window x:Class="View.CustomerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:View"
+        mc:Ignorable="d"
+        Title="Hotel Booking System" Height="700" Width="1000"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#007ACC" Padding="15,10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Text="Hotel Booking System"
+                           Foreground="White" FontSize="18" FontWeight="SemiBold"/>
+
+                <StackPanel Grid.Column="2" Orientation="Horizontal">
+                    <TextBlock x:Name="CustomerNameDisplay" Foreground="White"
+                               VerticalAlignment="Center" Margin="0,0,15,0"/>
+                    <Button Content="Logout" Padding="8,3" Click="LogoutButton_Click"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Main Content - This is where the BookingView will be placed -->
+        <ContentControl Grid.Row="1" x:Name="MainContent"/>
+
+        <!-- Footer -->
+        <Border Grid.Row="2" Background="#F0F0F0" Padding="15,8">
+            <TextBlock Text="© 2024 Hotel Booking System"
+                       HorizontalAlignment="Center" Foreground="#555555"/>
+        </Border>
+    </Grid>
+</Window>

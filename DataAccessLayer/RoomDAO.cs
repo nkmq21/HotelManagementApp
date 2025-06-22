@@ -49,12 +49,14 @@ namespace DataAccessLayer
             return listRoom;
         }
 
-        public static void AddRoom(RoomInformation room)
+        public static bool AddRoom(RoomInformation room)
         {
             if (!listRoom.Contains(room))
             {
                 listRoom.Add(room);
+                return true;
             }
+            return false;
         }
 
         public static void RemoveRoom(RoomInformation room)
@@ -68,6 +70,14 @@ namespace DataAccessLayer
         public static RoomInformation GetRoomById(int id)
         {
             return listRoom.FirstOrDefault(c => c.RoomTypeID == id);
+        }
+
+        public static List<RoomInformation> GetAvailableRooms(DateTime checkinDate, DateTime checkoutDate, RoomType selectedRoomType, int numberOfGuests)
+        {
+            var availableRooms = listRoom.Where(r => r.RoomTypeID == selectedRoomType.TypeId && r.MaxCapacity >= numberOfGuests && r.RoomStatus).ToList();
+            var bookings = BookingDAO.GetAllBooking().Where(b => b.BookingStatus == BookingStatus.Confirmed).ToList();
+
+            return availableRooms.Where(room => !bookings.Any(booking => booking.RoomId == room.RoomId && checkinDate < booking.CheckoutTime && checkoutDate > booking.CheckinTime)).ToList();
         }
 
         public static bool UpdateRoomInformation(RoomInformation room)

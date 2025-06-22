@@ -29,9 +29,10 @@ namespace DataAccessLayer
             return roomType ?? throw new InvalidOperationException($"No room type found with the id {id}");
         }
 
-        public static void AddRoomType(RoomType roomType)
+        public static bool AddRoomType(RoomType roomType)
         {
             listRoomType.Add(roomType);
+            return true;
         }
 
         public static void RemoveRoomType(RoomType roomType) { listRoomType.Remove(roomType); }

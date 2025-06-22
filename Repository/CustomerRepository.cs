@@ -7,9 +7,9 @@ namespace Repository
 {
     public class CustomerRepository : IRepository<Customer>
     {
-        public void Add(Customer entity)
+        public bool Add(Customer entity)
         {
-            CustomerDAO.AddCustomer(entity);
+            return CustomerDAO.AddCustomer(entity);
         }
 
         public void Delete(Customer entity)
@@ -20,6 +20,11 @@ namespace Repository
         public IEnumerable<Customer> GetAll()
         {
             return CustomerDAO.GetListCustomer();
+        }
+
+        public List<RoomInformation> GetAvailableRooms(DateTime checkinDate, DateTime checkoutDate, RoomType selectedRoomType, int numberOfGuests)
+        {
+            throw new NotImplementedException();
         }
 
         public Customer GetById(int id)
